@@ -1,0 +1,232 @@
+/*основний колір тексту #757575 */
+/* додатковий колір тексту #212121 */
+/*білий колір заголовка #FFFFFF */
+/*акцент #2196F3*/
+/*колір фону #FFFFFF*/
+/*колір героя та футера #2F303A*/
+/*додатковий колір фону #E5E5E5*/
+/*колір фону секціі команда  #F5F4FA;*/
+/*колір номери і телефону в футері rgba(255, 255, 255, 0.6);*/
+
+
+/*приховування заголовка секції наши преимущества*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/*призначення змінної*/
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --brand-color: #2196f3;
+}
+
+/*стилізація всього документу*/
+.page {
+  color: var(--primary-text-color);
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/*прибирання крапок біля списку*/
+.list {
+  list-style: none;
+}
+
+/*стилізація логотипу*/
+.logo {
+  color:
+    var(--brand-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+/*стилизація чорної частини логотипу */
+.logo-black {
+  color: #212121;
+}
+
+/*стилізація навігації сайту*/
+.site-nav .link {
+  text-decoration: none;
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--brand-color);
+}
+
+.site-nav .link.curret {
+  color: var(--brand-color);
+}
+
+/*стилізація навігаціі контактів*/
+.contact-nav .link {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--brand-color);
+}
+
+/*стилізація героя*/
+.hero {
+  background-color: #2f303a;
+}
+
+/*переводить текст заголовка героя в верхній регістр*/
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/*стилізація кнопки героя*/
+.btn-primery {
+  color: #FFFFFF;
+  background-color: var(--brand-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/*стилізація секцій*/
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/*стилізація секції з перевагами*/
+.feature-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+/*стилізація секції чим ми займаємося*/
+
+
+/*стилізація секції наша команда*/
+.team {
+  background-color: #F5F4FA;
+}
+
+.team-list {
+  background-color: #FFFFFF;
+}
+
+.team-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-list .text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/*cтилізація футера*/
+.footer {
+  background-color: #2F303A;
+}
+
+/*стилизація білої частини логотипу футера */
+.logo-white {
+  color: #FFFFFF;
+}
+
+/*стилізація контактів футера*/
+.footer-list .link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.72;
+  text-decoration: none;
+}
+
+.footer-list .link.adress {
+  color: #FFFFFF;
+}
+
+.footer-list .link:hover,
+.footer-list .link:focus {
+  color: var(--brand-color);
+}
+
+/*стилізація portfolio.html*/
+.portfolio-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/*стилізація кнопок портфоліо*/
+.portfolio-btn {
+  color: #212121;
+  background-color: #F5F4FA;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #FFFFFF;
+  background-color: #2196f3;
+}
+
+.portfolio-list .text {
+  font-size: 16px;
+  line-height: 1.88;
